@@ -1,10 +1,9 @@
-# scratch-gui
+# dolphinmod-gui
 
-## **⚠️ NOTICE: Repository Migration to Mono-Repo ⚠️**
+## **NOTICE: DOLPHINMOD IS IN DEVELOPMENT AND SOME FEATURES WONT WORT. DONT BLAME ME.**
 
-The Scratch Team has migrated the `scratch-gui` module into a new mono-repo,
-[`scratch-editor`](https://github.com/scratchfoundation/scratch-editor). This independent `scratch-gui` repository
-**will be archived**. Any new issues or pull requests should be opened in the mono-repo.
+The DolphinMod staff has DolphinMod in beta, so there will be some issues. This independent `DolphinMod-gui` repository
+**is free**. Any new issues or pull requests should be opened in this repository.
 
 The new mono-repo version of `scratch-gui` is published to the NPM registry as
 [`@scratch/scratch-gui`](https://www.npmjs.com/package/@scratch/scratch-gui).
@@ -17,7 +16,6 @@ The new mono-repo version of `scratch-gui` is published to the NPM registry as
   reduce the chance of duplicate work.
 * We apologize for the inconvenience and greatly appreciate your help with this transition!
 
-For more information, see the [`scratch-editor` repository on GitHub](https://github.com/scratchfoundation/scratch-editor).
 
 ## Overview
 
