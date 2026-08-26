@@ -1,10 +1,10 @@
 {
-  "name": "scratch-gui",
-  "version": "5.3.0",
-  "description": "Graphical User Interface for creating and running Scratch 3.0 projects",
-  "author": "Massachusetts Institute of Technology",
+  "name": "dolphinmod-gui",
+  "version": "1.3.0",
+  "description": "Graphical User Interface for creating and running DolphinMod projects",
+  "author": "Us",
   "license": "AGPL-3.0-only",
-  "homepage": "https://github.com/scratchfoundation/scratch-gui#readme",
+  "homepage": "https://github.com/Monodot-1/dolphinmod-gui#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/scratchfoundation/scratch-gui.git"
