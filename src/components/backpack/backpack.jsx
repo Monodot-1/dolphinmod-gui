@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import {FormattedMessage, defineMessages, injectIntl, intlShape} from 'react-intl';
 import DragConstants from '../../lib/drag-constants';
-import {ComingSoonTooltip} from '../coming-soon/coming-soon.jsx';
+import {ComingSoonTooltip} from '../sorry/sorry.jsx';
 import SpriteSelectorItem from '../../containers/sprite-selector-item.jsx';
 import styles from './backpack.css';
 
@@ -15,6 +15,10 @@ const dragTypeMap = { // Keys correspond with the backpack-server item types
     sound: DragConstants.BACKPACK_SOUND,
     script: DragConstants.BACKPACK_CODE,
     sprite: DragConstants.BACKPACK_SPRITE
+    stage: DragConstants.BACKPACK_STAGE,
+    button: DragConstants.BACKPACK_BUTTON,
+    photo: DragConstants.BACKPACK_PHOTO,
+    label: DragConstants.BACKPACK_LABEL
 };
 
 const labelMap = defineMessages({
@@ -37,6 +41,26 @@ const labelMap = defineMessages({
         id: 'gui.backpack.spriteLabel',
         defaultMessage: 'sprite',
         description: 'Label for sprite backpack item'
+            
+        stage: {
+        id: 'gui.backpack.stageLabel',
+        defaultMessage: 'stage',
+        description: 'Label for stage backpack item'
+    },
+    button: {
+        id: 'gui.backpack.buttonLabel',
+        defaultMessage: 'button',
+        description: 'Label for button backpack item'
+    },
+    label: {
+        id: 'gui.backpack.labelLabel',
+        defaultMessage: 'labeling',
+        description: 'Label for label backpack item'
+    },
+    photo: {
+        id: 'gui.backpack.photoLabel',
+        defaultMessage: 'photo',
+        description: 'Label for photo backpack item'
     }
 });
 
