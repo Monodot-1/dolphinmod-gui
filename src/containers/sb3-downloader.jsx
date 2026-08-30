@@ -11,14 +11,14 @@ import downloadBlob from '../lib/download-blob';
  * The component can then be used to attach project saving functionality
  * to any other component:
  *
- * <SB3Downloader>{(downloadProject, props) => (
+ * <DolphinDownloader>{(downloadProject, props) => (
  *     <MyCoolComponent
  *         onClick={downloadProject}
  *         {...props}
  *     />
- * )}</SB3Downloader>
+ * )}</DolphinDownloader>
  */
-class SB3Downloader extends React.Component {
+class DolphinDownloader extends React.Component {
     constructor (props) {
         super(props);
         bindAll(this, [
@@ -26,7 +26,7 @@ class SB3Downloader extends React.Component {
         ]);
     }
     downloadProject () {
-        this.props.saveProjectSb3().then(content => {
+        this.props.saveProjectDolphim().then(content => {
             if (this.props.onSaveFinished) {
                 this.props.onSaveFinished();
             }
@@ -52,23 +52,23 @@ const getProjectFilename = (curTitle, defaultTitle) => {
     return `${filenameTitle.substring(0, 100)}.sb3`;
 };
 
-SB3Downloader.propTypes = {
+DolphinDownloader.propTypes = {
     children: PropTypes.func,
     className: PropTypes.string,
     onSaveFinished: PropTypes.func,
     projectFilename: PropTypes.string,
     saveProjectSb3: PropTypes.func
 };
-SB3Downloader.defaultProps = {
+DolphinDownloader.defaultProps = {
     className: ''
 };
 
 const mapStateToProps = state => ({
-    saveProjectSb3: state.scratchGui.vm.saveProjectSb3.bind(state.scratchGui.vm),
+    saveProjectDolphin: state.scratchGui.vm.saveProjectSb3.bind(state.scratchGui.vm),
     projectFilename: getProjectFilename(state.scratchGui.projectTitle, projectTitleInitialState)
 });
 
 export default connect(
     mapStateToProps,
     () => ({}) // omit dispatch prop
-)(SB3Downloader);
+)(DolphinDownloader);
